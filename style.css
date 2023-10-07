@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow-wrap: break-word;
+}
+
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 1%;
+}
+
+
+.fixado {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin: 0;
+
+}
+
+/* Estilos do menu de navegação */
+.menu {
+  list-style-type: none;
+  padding: 1%;
+  text-align: center;
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 2%;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.menu a:hover,
+.menu a:active {
+  text-decoration: underline;
+}
+
+/* Estilos da pagina de sucesso */
+#sucess {
+  background-color: #E6E6FA;
+  border: solid #B0E0E6;
+  padding: 5%;
+  margin: 5% 8% 5% 8%;
+}
+
+/* Estilos do conteúdo principal */
+main {
+  background-color: #fff;
+  padding: 5%;
+  margin: 2% 5% 2% 5%;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+aside {
+  margin: 2% 5% 2% 2%;
+  padding: 2%;
+  background-color: #fff;
+  width: 20%;
+  font-size: 90%;
+
+}
+
+aside ol {
+  padding-left: 1.6em;
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.principal main {
+  margin: 2% 2% 2% 5%;
+  width: 85%;
+}
+
+/* Estilos do rodapé */
+
+footer {
+  text-align: center;
+  padding: .5px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+footer p {
+  font-size: .5em;
+  width: 95%;
+}
+
+fieldset {
+  /* border: 1px solid #ddd;
+  border-radius: 5px; */
+  padding: 5%;
+  margin-top: 5%;
+}
+
+legend {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+fieldset tr,td {
+
+  text-align: left;
+} 
+
+th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+fieldset tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+fieldset tr>td:first-child {
+  width: 15%;
+  text-align: center;
+}
+
+
+
+
+
+
+.mapa {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mapa>p {
+  width: 90%;
+  margin: 0 5% 1%;
+  background-color: #007bff;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-weight: bold;
+  align-self: center;
+}
+
+.local>p:first-child {
+  background-color: #007bff;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-weight: bold;
+  padding-left: 2%;
+
+}
+
+.local p:nth-child(3) {
+  background-color: #007bff;
+  color: #fff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-weight: bold;
+  padding-left: 2%;
+  margin-top: 5%;
+}
+
+/* Estilos responsivos */
+@media (orientation: portrait) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .menu li {
+    display: block;
+    margin-bottom: 1.5%;
+  }
+
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .imagens tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .imagens img{
+    width: 100%;
+    
+  }
+
+
+  /* aside{
+    width: 100%;
+    margin: 2% 2%;
+    padding: 3%;
+  } */
+}
+
+/* Estilos formulario */
+.space {
+  margin: 1%;
+  padding: 1%;
+}
+
+input:invalid+span::after {
+  content: '✘';
+  color: red;
+}
+
+input:valid+span::after {
+  content: '✔';
+  color: green;
+}
+td {
+  text-align: center;
+}
+.imgComissao {
+  display: block;
+  margin: 0 auto;
+  
+}

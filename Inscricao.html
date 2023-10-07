@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SIT-Inscrição</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="fixado">
+    <header>
+      <h1>SIT-Inscrição</h1>
+
+    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">PÁGINA PRINCIPAL</a></li>
+        <li><a href="programacao.html">PROGRAMAÇÃO</a></li>
+        <li><a href="local.html">LOCAL</a></li>
+        <li><a href="Inscricao.html">INSCRIÇÃO</a></li>
+        <li><a href="comissao.html">COMISSÃO DO EVENTO</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <main>
+    <fieldset>
+      <legend>Inscrição</legend>
+      <form name="cadastro" action="sucess.html" method="post">
+        <div class="space">
+          <label for="nome">Nome: </label>
+          <input type="text" name="nome" id="nome" placeholder="Nome e sobrenome" required autofocus>
+        </div>
+        <div class="space">
+          <label for="cpf">C.P.F.: </label>
+          <input type="text" name="cpf" id="cpf" placeholder="C.P.F" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+          <span></span>
+        </div>
+        <div class="space">
+          <label for="rg">R.G.: </label>
+          <input type="number" name="rg" id="rg" placeholder="XXXXXXXX" required>
+          <span></span>
+        </div>
+        <div class="space">
+          <label for="sexo">Sexo: </label>
+        </div>
+        <div class="space">
+          <input type="radio" name="sexo" value="Feminino">
+          <label for="sexo">Feminino </label>
+          <input type="radio" name="sexo" value="Masculino">
+          <label for="sexo">Masculino </label>
+          <input type="radio" name="sexo" value="NaoIdentificado">
+          <label for="sexo">Não Identificado </label>
+        </div>
+        <div class="space">
+          <label for="sexo">Data de Nascimento: </label>
+          <input type="date" id="dnasc" required>
+        </div>
+        <div class="space">
+          <label for="telefone">Telefone: </label>
+          <input type="tel" id="telefone" pattern="\(\d{2}\)\d{5}-\d{4}" placeholder="(xx)xxxxx-xxxx">
+        </div>
+        <div class="space">
+          <label for="area-interesse">Área de Interesse: </label>
+          <select name="area-interesse" id="area-interesse" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Palestras">Palestras </option>
+            <option value="Workshops">Workshops </option>
+            <option value="Feira Tecnológica">Feira Tecnológica </option>
+            <option value="Hackathons">Hackathons </option>
+          </select>
+        </div>
+        <div class="space">
+          <label for="area-interesse">Deseja participar de: </label>
+          <div>
+            <input type="checkbox" id="evento1" name="eventos" value="Palestra: Tendências Tecnológicas do Futuro">
+            Palestra: Tendências Tecnológicas do Futuro
+          </div>
+          <div>
+            <input type="checkbox" id="evento2" name="eventos" value="Workshop: Introdução à Inteligência Artificial">
+            Workshop: Introdução à Inteligência Artificial
+          </div>
+          <div>
+            <input type="checkbox" id="evento3" name="eventos" value="Feira Tecnológica: Demonstração de Novos Gadgets">
+            Feira Tecnológica: Demonstração de Novos Gadgets
+          </div>
+          <div>
+            <input type="checkbox" id="evento4" name="eventos" value="Palestra: Inovação em Tecnologia Médica">
+            Palestra: Inovação em Tecnologia Médica
+          </div>
+          <div>
+            <input type="checkbox" id="evento5" name="eventos" value="Workshop: Desenvolvimento de Aplicativos Móveis">
+            Workshop: Desenvolvimento de Aplicativos Móveis
+          </div>
+          <div>
+            <input type="checkbox" id="evento6" name="eventos"
+              value="Feira Tecnológica: Showcase de Startups Promissoras"> Feira Tecnológica: Showcase de Startups
+            Promissoras
+          </div>
+          <div>
+            <input type="checkbox" id="evento7" name="eventos"
+              value="Hackathon: Desenvolvimento de Soluções para Cidades Inteligentes"> Hackathon: Desenvolvimento de
+            Soluções para Cidades Inteligentes
+          </div>
+          <div>
+            <input type="checkbox" id="evento8" name="eventos"
+              value="Palestra: Avanços em Realidade Virtual e Aumentada"> Palestra: Avanços em Realidade Virtual e
+            Aumentada
+          </div>
+          <div>
+            <input type="checkbox" id="evento9" name="eventos"
+              value="Workshop: Segurança Cibernética: Como Proteger seus Dados"> Workshop: Segurança Cibernética: Como
+            Proteger seus Dados
+          </div>
+        </div>
+        <button class="botao">Enviar</button>
+      </form>
+    </fieldset>
+  </main>
+  <footer>
+    <p>Simpósio de Inovação Tecnoógica - Todos os Direitos Reservados - 2023 | Contate-nos: Tel: 34 9 9999-8888 Email: eventoSit@email.com</p>
+  </footer>
+</body>
+
+</html>
